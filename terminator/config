@@ -1,18 +1,32 @@
 [global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   focus = mouse
   suppress_multiple_term_dialog = True
   title_hide_sizetext = True
   title_transmit_bg_color = "#2e3436"
 [keybindings]
+  move_tab_left = <Primary><Shift>Tab
+  move_tab_right = <Primary>Tab
   split_vert = <Primary><Shift>k
 [layouts]
   [[default]]
-    [[[child1]]]
-      parent = window0
-      type = Terminal
-    [[[window0]]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 05da0485-1576-47fb-83c0-6e9c31f75b12
+      last_active_window = True
+      maximised = False
+      order = 0
       parent = ""
+      position = 26:23
+      size = 786, 506
+      title = ghani@Ghani-Workstation:~
       type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = Monokai Soda
+      type = Terminal
+      uuid = 05da0485-1576-47fb-83c0-6e9c31f75b12
 [plugins]
 [profiles]
   [[default]]
