@@ -1,0 +1,16 @@
+{
+	"common": {
+		"term_truecolor": false
+	},
+	"ext": {
+		"shell": {
+			"colorscheme": "epsi",
+			"theme": "epsi",
+			"local_themes": {
+				"continuation": "continuation",
+				"select": "select"
+			}
+		}
+	}
+}
+

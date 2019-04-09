@@ -6,10 +6,11 @@ Plug 'raimondi/delimitmate'
 Plug 'yggdroot/indentline'
 Plug 'klen/python-mode'
 Plug 'vim-airline/vim-airline'
-Plug 'kshenoy/vim-signature'
 Plug 'junegunn/fzf'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'mhinz/vim-startify'
+Plug 'powerline/powerline'
+Plug 'ervandew/supertab'
 
 call plug#end()
 
@@ -29,13 +30,18 @@ syntax on
 set title
 set encoding=utf8
 
-"colors
+"plugins
+"nerdtree
+nmap " :NERDTree
+"powerline/airline
+let g:airline_powerline_fonts = 1
+
+"colors/display
 set background=dark
 let g:solarized_termcolors=256
 let g:solarized_contrast='high'
 let g:solarized_bold=1
 colorscheme solarized
-
 
 "turn off swap files
 set noswapfile
@@ -72,3 +78,9 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+"keybindings
+imap <S-Left> <C-o>0
+imap <S-Right> <C-o>$
+nmap <S-Left> 0
+nmap <S-Right> $
